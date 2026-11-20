@@ -380,6 +380,10 @@
     :docstring:
     :members:
 
+::: pytorch_optimizer.MGOSC
+    :docstring:
+    :members:
+
 ::: pytorch_optimizer.Muon
     :docstring:
     :members:

@@ -25,6 +25,7 @@ from pytorch_optimizer.optimizer.adamax import AdaMax
 from pytorch_optimizer.optimizer.adamc import AdamC
 from pytorch_optimizer.optimizer.adamg import AdamG
 from pytorch_optimizer.optimizer.adamod import AdaMod
+from pytorch_optimizer.optimizer.mgosc import MGOSC
 from pytorch_optimizer.optimizer.adamp import SGDP, AdamP
 from pytorch_optimizer.optimizer.adams import AdamS
 from pytorch_optimizer.optimizer.adamw import StableAdamW
@@ -178,6 +179,7 @@ __all__ = [
     'AdaLOMO',
     'AdaMax',
     'AdaMod',
+    'MGOSC',
     'AdaMuon',
     'AdaNorm',
     'AdaPNM',
@@ -310,6 +312,7 @@ OPTIMIZER_LIST: list[OptimizerType] = [
     AdaLOMO,
     AdaMax,
     AdaMod,
+    MGOSC,
     AdaMuon,
     AdaNorm,
     AdaPNM,
