@@ -56,6 +56,7 @@ from pytorch_optimizer.optimizer.exadam import EXAdam
 from pytorch_optimizer.optimizer.fadam import FAdam
 from pytorch_optimizer.optimizer.fira import Fira
 from pytorch_optimizer.optimizer.flash_adamw import FlashAdamW
+from pytorch_optimizer.optimizer.foam import FOAM
 from pytorch_optimizer.optimizer.focus import FOCUS
 from pytorch_optimizer.optimizer.fp16 import DynamicLossScaler, SafeFP16Optimizer
 from pytorch_optimizer.optimizer.fromage import Fromage
@@ -136,6 +137,7 @@ __all__ = [
     'BSAM',
     'CAME',
     'DASH',
+    'FOAM',
     'FOCUS',
     'FTRL',
     'GSAM',
@@ -352,6 +354,7 @@ OPTIMIZER_LIST: list[OptimizerType] = [
     EmoLynx,
     EmoNavi,
     FAdam,
+    FOAM,
     FOCUS,
     FTRL,
     Fira,
