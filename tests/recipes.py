@@ -235,6 +235,8 @@ OPTIMIZER_RECIPES: list[tuple[str, dict[str, Any], int]] = [
     ),
     ('klshampoo', {'lr': 5e-2}, 10),
     ('klsoap', {'lr': 5e-2}, 10),
+    ('foam', {'lr': 1e0, 'precondition_frequency': 1}, 5),
+    ('foam', {'lr': 1e0, 'one_sided': False, 'factored_second_moment': False, 'precondition_frequency': 1}, 5),
     ('adopt', {'lr': 1e0}, 5),
     ('ftrl', {'lr': 1e0, 'beta': 0.0, 'lambda_1': 0.0, 'lambda_2': 0.0}, 5),
     ('muon', {'lr': 5e-1, 'weight_decay': 1e-3, 'adamw_lr': 5e-1, 'adamw_wd': 1e-2, 'nesterov': True}, 5),

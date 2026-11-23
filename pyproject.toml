@@ -17,7 +17,7 @@ keywords = [
     "Conda", "DAdaptAdaGrad", "DAdaptAdam", "DAdaptAdan", "DAdaptSGD", "DAdaptLion", "DeMo", "DiffGrad", "EmoFact",
     "EmoLynx", "EmoNavi", "EmoNeco", "EmoZeal", "EXAdam", "FAdam", "Fira", "FOCUS", "FriendlySAM", "Fromage", "FTRL",
     "GaLore", "Grams", "Gravity", "GrokFast", "GSAM", "Kate", "KLShampoo", "KLSOAP", "Lamb", "LaProp", "LARS", "Lion", "LoRARite", "LOMO", "Lookahead", "Magma",
-    "EmoLynx", "EmoNavi", "EmoNeco", "EmoZeal", "EXAdam", "FAdam", "Fira", "FlashAdamW", "FOCUS", "FriendlySAM",
+    "EmoLynx", "EmoNavi", "EmoNeco", "EmoZeal", "EXAdam", "FAdam", "Fira", "FlashAdamW", "FOAM", "FOCUS", "FriendlySAM",
     "Conda", "DAdaptAdaGrad", "DAdaptAdam", "DAdaptAdan", "DAdaptSGD", "DAdaptLion", "DeMo", "DiffGrad", "DualAdam",
     "EmoFact", "EmoLynx", "EmoNavi", "EmoNeco", "EmoZeal", "EXAdam", "FAdam", "Fira", "FOCUS", "FriendlySAM", "Fromage", 
     "FTRL", "GaLore", "Grams", "Gravity", "GrokFast", "GSAM", "Kate", "Lamb", "LaProp", "LARS", "Lion", "LOMO", "Lookahead",

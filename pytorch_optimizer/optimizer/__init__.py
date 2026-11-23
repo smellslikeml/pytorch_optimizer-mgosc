@@ -56,6 +56,7 @@ from pytorch_optimizer.optimizer.exadam import EXAdam
 from pytorch_optimizer.optimizer.fadam import FAdam
 from pytorch_optimizer.optimizer.fira import Fira
 from pytorch_optimizer.optimizer.flash_adamw import FlashAdamW
+from pytorch_optimizer.optimizer.foam import FOAM
 from pytorch_optimizer.optimizer.focus import FOCUS
 from pytorch_optimizer.optimizer.fp16 import DynamicLossScaler, SafeFP16Optimizer
 from pytorch_optimizer.optimizer.fromage import Fromage
@@ -136,6 +137,7 @@ __all__ = [
     'BSAM',
     'CAME',
     'DASH',
+    'FOAM',
     'FOCUS',
     'FTRL',
     'GSAM',
@@ -352,6 +354,7 @@ OPTIMIZER_LIST: list[OptimizerType] = [
     EmoLynx,
     EmoNavi,
     FAdam,
+    FOAM,
     FOCUS,
     FTRL,
     Fira,
@@ -462,7 +465,7 @@ def load_bnb_optimizer(optimizer: str) -> OptimizerType:  # pragma: no cover
         NotImplementedError: The optimizer name is unsupported.
 
     """
-    from bitsandbytes import optim  # noqa: PLC0415
+    from bitsandbytes import optim
 
     for name, cls_name in BNB_OPTIMIZERS:
         if name in optimizer:
@@ -484,7 +487,7 @@ def load_q_galore_optimizer(optimizer: str) -> OptimizerType:  # pragma: no cove
         NotImplementedError: The optimizer name is unsupported.
 
     """
-    import q_galore_torch  # noqa: PLC0415
+    import q_galore_torch
 
     if 'adamw8bit' in optimizer:
         return q_galore_torch.QGaLoreAdamW8bit
@@ -505,7 +508,7 @@ def load_ao_optimizer(optimizer: str) -> OptimizerType:  # pragma: no cover
         NotImplementedError: The optimizer name is unsupported.
 
     """
-    from torchao.prototype import low_bit_optim  # noqa: PLC0415
+    from torchao.prototype import low_bit_optim
 
     if 'adamw8bit' in optimizer:
         return low_bit_optim.AdamW8bit

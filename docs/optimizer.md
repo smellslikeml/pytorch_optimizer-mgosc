@@ -260,6 +260,10 @@
     :docstring:
     :members:
 
+::: pytorch_optimizer.FOAM
+    :docstring:
+    :members:
+
 ::: pytorch_optimizer.FOCUS
     :docstring:
     :members:
