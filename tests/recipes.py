@@ -315,6 +315,7 @@ OPTIMIZER_RECIPES: list[tuple[str, dict[str, Any], int]] = [
     ('emonavi', {'lr': 1e-1, 'use_shadow': True}, 5),
     ('emolynx', {'lr': 5e-1, 'use_shadow': True}, 5),
     ('emofact', {'lr': 1e-1, 'use_shadow': True}, 5),
+    ('cadam', {'lr': 5e-1, 'weight_decay': 1e-3}, 5),
     ('conda', {'lr': 1e0, 'weight_decay': 1e-3, 'scale': 1.0, 'update_proj_gap': 1, 'projection_type': 'std'}, 5),
     ('bcos', {'lr': 1e0, 'mode': 'm'}, 5),
     ('bcos', {'lr': 1e0, 'mode': 'g'}, 5),

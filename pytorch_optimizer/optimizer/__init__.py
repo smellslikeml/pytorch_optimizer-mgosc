@@ -44,6 +44,7 @@ from pytorch_optimizer.optimizer.ano import Ano
 from pytorch_optimizer.optimizer.apollo import APOLLO, ApolloDQN
 from pytorch_optimizer.optimizer.avagrad import AvaGrad
 from pytorch_optimizer.optimizer.bcos import BCOS
+from pytorch_optimizer.optimizer.cadam import CADAM
 from pytorch_optimizer.optimizer.came import CAME
 from pytorch_optimizer.optimizer.conda import Conda
 from pytorch_optimizer.optimizer.dadapt import DAdaptAdaGrad, DAdaptAdam, DAdaptAdan, DAdaptLion, DAdaptSGD
@@ -134,6 +135,7 @@ __all__ = [
     'ASGD',
     'BCOS',
     'BSAM',
+    'CADAM',
     'CAME',
     'DASH',
     'FOCUS',
@@ -335,6 +337,7 @@ OPTIMIZER_LIST: list[OptimizerType] = [
     ApolloDQN,
     AvaGrad,
     BSAM,
+    CADAM,
     CAME,
     Conda,
     DASH,
@@ -693,19 +696,11 @@ def get_optimizer_parameters(
 
     groups = [
         {
-            'params': [
-                p
-                for n, p in model_or_parameter
-                if p.requires_grad and id(p) not in banned_parameter_ids
-            ],
+            'params': [p for n, p in model_or_parameter if p.requires_grad and id(p) not in banned_parameter_ids],
             'weight_decay': weight_decay,
         },
         {
-            'params': [
-                p
-                for n, p in model_or_parameter
-                if p.requires_grad and id(p) in banned_parameter_ids
-            ],
+            'params': [p for n, p in model_or_parameter if p.requires_grad and id(p) in banned_parameter_ids],
             'weight_decay': 0.0,
         },
     ]

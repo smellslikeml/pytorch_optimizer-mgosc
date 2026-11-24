@@ -176,6 +176,10 @@
     :docstring:
     :members:
 
+::: pytorch_optimizer.CADAM
+    :docstring:
+    :members:
+
 ::: pytorch_optimizer.CAME
     :docstring:
     :members:
